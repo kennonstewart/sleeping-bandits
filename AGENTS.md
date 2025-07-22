@@ -2,7 +2,7 @@
 
 Your primary goal is to initialize the repository for the **Unlearning-Bandit Simulation Suite**. You will create the necessary directory structure and populate it with Python files containing the class and method skeletons for the three core modules described in the research paper.
 
-Adhere to the following steps precisely.
+The following steps are provided as guidelines, but feel free to adapt them as the situation requires.
 
 ---
 
@@ -152,7 +152,6 @@ import numpy as np
 Create the Python file for the 
 
 Unlearn-UCB agent. This class will contain the logic for action selection and state updates as described in the paper.
-
 
 File: unlearning_bandits/unlearning_bandits/bandit_agent.py
 ```
