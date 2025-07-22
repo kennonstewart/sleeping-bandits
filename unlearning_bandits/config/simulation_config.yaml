@@ -1,0 +1,27 @@
+# Configuration for an Unlearning Bandit Simulation
+
+# --- Stream Parameters ---
+# Total number of rounds (T) in the event stream.
+total_rounds: 10000
+
+# Probability of a DELETE event at any given round.
+# The probability of an INSERT is (1 - deletion_probability).
+deletion_probability: 0.1
+
+# --- Bandit & Model Parameters ---
+# The set of actions available to the agent.
+# Corresponds to FAST INSERT, FAST DELETE, FULL RETRAIN[cite: 50].
+actions:
+  - 'FAST_INSERT'
+  - 'FAST_DELETE'
+  - 'FULL_RETRAIN'
+
+# Deletion capacity (m): the number of deletions allowed before a full retrain is enforced[cite: 51].
+deletion_capacity: 100
+
+# Fixed cost (X) incurred by the FULL_RETRAIN action[cite: 51].
+retrain_cost: 50.0
+
+# --- Privacy Parameters ---
+# Epsilon (ε) for differential privacy noise calibration[cite: 55, 62].
+epsilon: 1.0
